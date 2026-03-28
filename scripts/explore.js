@@ -4743,7 +4743,7 @@ function getSeed() {
 
   const now = new Date();
   const utcTime = now.getTime(); 
-  const halfDayNumber = Math.floor(utcTime / (1000 * 60 * 60 * 12));
+  const halfDayNumber = Math.floor(utcTime / (1000 * 60 * 10));
   const dayNumber = Math.floor(utcTime / (1000 * 60 * 60 * 24));
   dailySeed = dayNumber
 
@@ -4766,7 +4766,7 @@ function updateDailyCounters() {
   const contadores = document.querySelectorAll('.time-counter-daily');
 
   const ahora = Date.now();
-  const halfDayNumber = Math.floor(ahora / (1000 * 60 * 60 * 12));
+  const halfDayNumber = Math.floor(ahora / (1000 * 60 * 10));
 
   if (halfDayNumber !== lastHalfDayNumber) {
     lastHalfDayNumber = halfDayNumber;
@@ -4778,7 +4778,7 @@ function updateDailyCounters() {
     resetDailyTimers();
   }
 
-  const nextHalfDayStart = (halfDayNumber + 1) * (1000 * 60 * 60 * 12);
+  const nextHalfDayStart = (halfDayNumber + 1) * (1000 * 60 * 10);
   const diff = nextHalfDayStart - ahora;
 
   const horas = String(Math.floor(diff / 3600000)).padStart(2, '0');

@@ -151,7 +151,7 @@ function tooltipData(category, ttdata){
 
         
         if (ttdata == areas.wildlifePark.id) {
-            document.getElementById("tooltipBottom").innerHTML += `Pokemon in the Wildlife Park rotate every 12 hours`
+            document.getElementById("tooltipBottom").innerHTML += `Pokemon in the Wildlife Park rotate every 10 minutes`
         }
         
 

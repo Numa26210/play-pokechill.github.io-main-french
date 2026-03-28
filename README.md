@@ -1,2 +1,2 @@
 # play-pokechill.github.io
-Monsters and Chill
+Monstres et Chill
