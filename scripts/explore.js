@@ -4760,13 +4760,13 @@ function getSeed() {
   return dayNumber;
 }
 
-let lastHalfDayNumber = Math.floor(Date.now() / (1000 * 60 * 60 * 12));
+let lastHalfDayNumber = Math.floor(Date.now() / (1000 * 60 * 15));
 
 function updateDailyCounters() {
   const contadores = document.querySelectorAll('.time-counter-daily');
 
   const ahora = Date.now();
-  const halfDayNumber = Math.floor(ahora / (1000 * 60 * 10));
+  const halfDayNumber = Math.floor(ahora / (1000 * 60 * 15));
 
   if (halfDayNumber !== lastHalfDayNumber) {
     lastHalfDayNumber = halfDayNumber;
